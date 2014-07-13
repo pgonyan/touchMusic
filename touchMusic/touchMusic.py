@@ -68,6 +68,12 @@ while 1:
 	elif not c1.get_busy():	
 		c1 = s1.play()     
 
+    if a == 'a':
+	if not firstTimeC4 :
+		c1 = s1.stop()
+		firstTimeC1 = 1
+
+
     if a == 'B':
 	print ("B")
 	if firstTimeC2 :
@@ -75,6 +81,11 @@ while 1:
 		firstTimeC2 = 0
 	elif not c2.get_busy():	
 		c2 = s2.play()     
+
+    if a == 'b':
+	if not firstTimeC2 :
+		c2 = s2.stop()
+		firstTimeC2 = 1
 
     if a == 'C':
 	print ("C")
@@ -84,12 +95,26 @@ while 1:
 	elif not c3.get_busy():	
 		c3 = s3.play()     
 
+    if a == 'c':
+	if not firstTimeC3 :
+		c3 = s3.stop()
+		firstTimeC3 = 1
+
     if a == 'D':
 	if firstTimeC4 :
 		c4 = s4.play()
 		firstTimeC4 = 0
 	elif not c4.get_busy():	
 		c4 = s4.play()      
+
+
+    if a == 'd':
+	if not firstTimeC4 :
+		c4 = s4.stop()
+		firstTimeC4 = 1
+
+
+
 
     if a == 'Q':
 	quit()
